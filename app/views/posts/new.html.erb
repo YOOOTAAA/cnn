@@ -1,0 +1,19 @@
+<%= form_tag("/posts/create") do %>
+  <div>
+    number<br>
+    <textarea name="num"></textarea>
+  </div>
+  <div>
+    放送回<br>
+    <textarea name="number"></textarea>
+  </div>
+  <div>
+    放送日時<br>
+    <textarea name="date"></textarea>
+  </div>
+  <div>
+    放送内容<br>
+    <textarea name="content"></textarea>
+  </div>
+  <input type="submit" value="投稿">
+<% end %>
