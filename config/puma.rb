@@ -4,6 +4,9 @@
 # the maximum value specified for Puma. Default is set to 5 threads for minimum
 # and maximum; this matches the default thread size of Active Record.
 #
+#勝手に付け加えその1
+workers Integer(ENV['WEB_CONCURRENCY'] || 2)
+#終わり
 threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
 threads threads_count, threads_count
 
